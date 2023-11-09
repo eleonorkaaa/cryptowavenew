@@ -1,0 +1,224 @@
+body{
+    margin:0;
+    padding:0;
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 5rem;
+    color:#f9f8f8;
+    line-height: 0.5;
+}
+p{
+    line-height: 1.5;
+}
+
+#logo{
+    width:50px;
+    position:absolute;
+    margin:20px 0px 0px 14px;
+}
+.hero-container{
+    height:100vh;
+    width:100%;
+    background-color: #121212;
+    background-image: linear-gradient(
+        0deg,
+        transparent 24%,
+        #0c0032 25%,
+        #0c0032 30%,
+        transparent 27%,
+        transparent
+      ),
+      linear-gradient(
+        90deg,
+        transparent 24%,
+        #0c0032 25%,
+        #0c0032 30%,
+        transparent 27%,
+        transparent
+      );
+    background-size: 50px 50px;
+}
+.hero-container h2{
+    color:#EB00FF;
+    margin-top:0;
+}
+.title-container{
+    display:block;
+    float:right;
+    text-align: right;
+    padding:200px 150px 0px 0px;
+}
+.hero-photo{
+    position:fixed;
+    top:0;
+}
+.hero-photo img{
+    width:800px;
+}
+.about-us{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: justify;
+    background-color: #f9f8f8;
+    padding:50px 200px 80px 800px;
+}
+
+.why-us{
+    display:flex;
+    background-color: #121212;
+    z-index: 5;
+}
+.why-us-text{
+    display:block;
+    text-align: justify;
+    padding:50px 200px 80px 430px;
+}
+.why-us-text h2{
+    text-align:right;
+}
+.why-us img{
+    width:300px;
+    height:600px;
+    padding:50px 0px 50px 100px;
+}
+.why-us p{
+    color:#f9f8f8;
+    padding-top:30px;
+}
+.why-us-text ul{
+    color:#EB00FF;
+    font-family: 'Lilita One', sans-serif;
+    font-size:2rem;
+    text-align:center;
+    list-style-position:inside;
+    padding-top:25px;
+}
+.what{
+    display:flex;
+    background-color: #f9f8f8;
+    z-index:6;
+}
+.what img{
+    width:500px;
+    padding:50px 200px 50px 200px;
+}
+.what-text{
+    display:block;
+    text-align:justify;
+    padding-left:200px;
+    padding-top:50px;
+}
+.what ul{
+    color:#EB00FF;
+    font-family: 'Lilita One', sans-serif;
+    font-size:2rem;
+    padding-top:20px;
+}
+ul p{
+    color: #121212;
+    font-family: 'Roboto', sans-serif;
+    font-size:1rem;
+}
+.title-h2{
+    font-family: 'Lilita One', sans-serif;
+    color:#4500FE;
+    font-size:2rem;
+}
+.contacts{
+    padding-top:50px;
+    display:block;
+    height:300px;
+}
+.contacts-text{
+    display:block;
+    text-align:center;
+    
+}
+.contacts ul{
+    font-family: 'Lilita One', sans-serif;
+    font-size:1.5rem;
+    list-style-type: none;
+    line-height: 2;
+    text-align: center;
+    padding-left:0px;
+    margin-top:10px;
+}
+.button {
+  background-color:#f9f8f8;
+  box-shadow: #121212;
+  border-radius: 100px;
+  color:#121212;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1rem;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+a { 
+    color: inherit; 
+    text-decoration: none;
+}
+footer{
+    height:120px;
+    text-align:center;
+    background-color: #121212;
+    color:#f9f8f8;
+    padding-top:80px;
+    font-family: 'Lilita One', sans-serif;
+    font-size:2rem;
+}
+@media screen and (max-width: 600px) {
+    .hero-photo,.why-us img,.what img{
+        display:none;
+    }
+    .hero-container{
+        margin:0;
+        padding:0;
+    }
+    .title-container{
+        width:100%;
+        padding:0;
+        padding-top:200px;
+        margin:0;
+    }
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .hero-container h2{
+        text-align: center;
+        font-size: 1em;
+    }
+    .why-us-text,.about-us,.what{
+        padding:20px;
+        margin:0;
+    }
+    .why-us-text ul{
+        padding-right:50px;
+    }
+    .what-text{
+        padding:0;
+    }
+    footer{
+        height:40px;
+        padding:10px;
+        font-size:1.5em;
+    }
+}
+    
